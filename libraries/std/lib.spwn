@@ -25,7 +25,6 @@ import "http.spwn"
 import "range.spwn"
 import "set.spwn"
 import "log.spwn"
-import "path.spwn"
 level_info = import "level_info.spwn"
 
 chroma = import "chroma.spwn"
@@ -50,7 +49,6 @@ return {
     obj_props: constants.obj_props,
     obj_ids: constants.obj_ids,
     open: @file::new,
-    path: @path::new,
     regex: @regex::new,
     rgb: @chroma::from_rgb,
     rgb8: @chroma::from_rgb8,
